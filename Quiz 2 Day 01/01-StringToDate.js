@@ -4,9 +4,9 @@
  */
 
 function strToDate(s) {
-  let regex = /^(\d{2})\/(\d{2})\/(\d{4})$/; // Date format: DD/MM/YYYY
+  let regex = /^(\d{2})\/(\d{2})\/(\d{4})$/;
   if (!regex.test(s)) {
-    return s + " bad format date"; // Invalid format
+    return s + " bad format date";
   }
 
   let dateParts = s.split('/')

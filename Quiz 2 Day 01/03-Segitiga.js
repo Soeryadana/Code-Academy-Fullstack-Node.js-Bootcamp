@@ -1,7 +1,12 @@
 /** buat segitiga  */ 
+let se
 
-for (let i = 0; i < 6; i++) {
-
+for (let i = 4; i >= 1; i--) {
+    let triangle = '';
+    for (let j = 1; j <= i; j++) {
+        triangle += (j) + ' ';
+    }
+    console.log(triangle);
 } 
 // output 
 // 1 2 3 4 
@@ -9,8 +14,12 @@ for (let i = 0; i < 6; i++) {
 // 1 2 
 // 1 
 
-for (let i = 0; i < 6; i++) {
-
+for (let i = 5; i >= 1; i--) {
+    let triangle = '';
+    for (let j = i; j >= 1; j--) {
+        triangle += (j) + ' ';
+    }
+    console.log(triangle);
 }  
 
 // output

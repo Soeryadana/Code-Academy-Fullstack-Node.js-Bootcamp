@@ -1,11 +1,26 @@
+function showPrimeNumber(n) {
+  let num = '';
+  for (let i = 2; i <= n; i++) {
+    let prime = isPrime(i);
 
-function showPrimeNumber(n){
-
+    if (prime == true) {
+      num += i + " ";
+    }
+  }
+  return num;
 }
 
-function isPrime(n){
+function isPrime(n) {
+  let prime = true;
 
+  for (let i = 2; i < n; i++) {
+    if (n % i == 0) {
+      prime = false;
+      break;
+    }
+  }
 
+  return prime;
 }
 
 console.log(showPrimeNumber(100));
@@ -18,5 +33,3 @@ console.log(showPrimeNumber(100));
 73	79	83	89	97
 
  */
-
-
